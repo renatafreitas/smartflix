@@ -1,7 +1,6 @@
 ---
-:verbose: false
-:concurrency: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-:timeout: 30
+:concurrency: 3
+
 :queues:
   - default
   - movies

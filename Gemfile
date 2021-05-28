@@ -25,8 +25,6 @@ gem 'redis', '~> 4.0'
 # tidy up these gems later:
 # sidekiq
 gem 'sidekiq'
-# faker
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 # pry
 gem 'pry', '~> 0.13.1'
 
@@ -37,8 +35,12 @@ gem 'pry', '~> 0.13.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'faker'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
 group :development do
