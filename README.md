@@ -7,12 +7,16 @@ Things you may want to cover:
 
 * Ruby version
 
+``` ruby 2.7.1p```
+
 * System dependencies
 
 * Configuration
 
 * Database creation
 
+ ` rails db:create`
+ 
 * Database initialization
 
 * How to run the test suite
