@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+#
 class CreateMovieWorker
   include Sidekiq::Worker
 
-  def perform(:title)
-    # Do something
-    @title = title
+  sidekiq_options retry: false, queue: :movies
+
+  def perform(**args)
+    Movie.create(title: Faker::Movie.title)
   end
 end
