@@ -4,3 +4,9 @@
 :queues:
   - default
   - movies
+
+:schedule:
+  CreateMovieWorker:
+    cron: "*/30 * * * *" # execute at every 30 minutes
+    queue: movies
+    enabled: true
