@@ -9,5 +9,9 @@ class ApiCall
   def self.random_movie
     get("/?i=tt3896198&apikey=#{OMDB_key}")
   end
+
+  def self.get_movie(title)
+    get("/?i=tt3896198&apikey=#{OMDB_key}&t=#{title}")
+  end
 end
 

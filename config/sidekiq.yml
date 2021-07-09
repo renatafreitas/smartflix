@@ -7,6 +7,6 @@
 
 :schedule:
   CreateMovieWorker:
-    cron: "*/30 * * * *" # execute at every 30 minutes
+    cron: "0 1 * * *"
     queue: movies
     enabled: true
