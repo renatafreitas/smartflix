@@ -9,7 +9,7 @@ class OmdbMovie
   end
 
   def self.find_movie_or_call_it(title)
-    return db_find_movie(title) || api_find_movie(title)
+    db_find_movie(title) || api_find_movie(title)
   end
 
   def self.db_find_movie(title)

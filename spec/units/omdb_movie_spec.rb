@@ -1,17 +1,10 @@
-require 'rspec'
+# frozen_string_literal: true
+
+require 'rails_helper'
 
 describe 'OmdbMovie' do
-  before do
-    # Do nothing
-  end
 
-  after do
-    # Do nothing
-  end
-
-  context 'when condition' do
-    it 'succeeds' do
-      pending 'Not implemented'
-    end
+  it '#create_fake_movie' do
+    expect(subject.create_fake_movie).to
   end
 end
