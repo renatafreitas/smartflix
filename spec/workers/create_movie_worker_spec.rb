@@ -1,17 +1,4 @@
-require 'rspec'
+require 'rails_helper'
 
-describe 'CreateMovieWorker' do
-  before do
-    # Do nothing
-  end
-
-  after do
-    # Do nothing
-  end
-
-  context 'when condition' do
-    it 'succeeds' do
-      pending 'Not implemented'
-    end
-  end
+RSpec.describe CreateMovieWorker do
 end

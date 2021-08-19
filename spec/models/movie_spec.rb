@@ -1,4 +1,4 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
 RSpec.describe Movie do
   subject(:instance) { described_class.new(title:'Sharknado') }
