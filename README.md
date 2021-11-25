@@ -25,4 +25,14 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Docker
+
+To initialize docker:
+
+`docker-compose up`
+
+To terminate it: `ctrl + c`
+
+After shutting down docker, run:
+
+`docker-compose down`
