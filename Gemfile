@@ -47,6 +47,7 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'dotenv-rails'
+  gem 'rspec-sidekiq'
 end
 
 group :development do
