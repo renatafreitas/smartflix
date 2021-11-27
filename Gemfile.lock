@@ -91,11 +91,8 @@ GEM
     erubi (1.10.0)
     et-orbi (1.2.4)
       tzinfo
-    factory_girl (4.9.0)
-      activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
-      railties (>= 3.0.0)
+    factory_bot (5.1.1)
+      activesupport (>= 4.2.0)
     faker (2.18.0)
       i18n (>= 1.6, < 2)
     ffi (1.15.1)
@@ -198,6 +195,9 @@ GEM
       rspec-expectations (~> 3.9.0)
       rspec-mocks (~> 3.9.0)
       rspec-support (~> 3.9.0)
+    rspec-sidekiq (3.1.0)
+      rspec-core (~> 3.0, >= 3.0.0)
+      sidekiq (>= 2.4.0)
     rspec-support (3.9.4)
     rubocop (0.93.1)
       parallel (~> 1.10)
@@ -281,7 +281,7 @@ DEPENDENCIES
   capybara
   database_cleaner
   dotenv-rails
-  factory_girl_rails
+  factory_bot
   faker
   httparty (~> 0.13.7)
   jbuilder (~> 2.7)
@@ -292,6 +292,7 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.7)
   redis (~> 4.0)
   rspec-rails (~> 3.5)
+  rspec-sidekiq
   rubocop
   sass-rails (>= 6)
   sidekiq
