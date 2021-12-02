@@ -48,6 +48,10 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'dotenv-rails'
   gem 'rspec-sidekiq'
+  gem 'rubocop'
+  # gem 'rubocop-performance'
+  gem 'rubocop-rails'
+  gem 'rubocop-rspec'
 end
 
 group :development do
