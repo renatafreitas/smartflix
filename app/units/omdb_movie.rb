@@ -4,10 +4,6 @@ require './lib/apis/omdb/api_call.rb'
 
 class OmdbMovie
 
-  def initialize(title)
-    find_movie_or_call_it(title)
-  end
-
   def self.find_movie_or_call_it(title)
     db_find_movie(title) || api_find_movie(title)
   end
