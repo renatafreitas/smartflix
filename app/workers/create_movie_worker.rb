@@ -7,10 +7,6 @@ class CreateMovieWorker
 
   sidekiq_options queue: :movies, retry: false
 
-  def perform
-    create_fake_movie
-  end
-
   def create_new_movie(**args)
     Movie.create!(args)
   end

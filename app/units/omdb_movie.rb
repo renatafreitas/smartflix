@@ -1,10 +1,9 @@
-# frozen_string_literal: true
-
-# add logic DB or call api here
+#add logic DB or call api here
 
 require './lib/apis/omdb/api_call.rb'
 
 class OmdbMovie
+
   def self.find_movie_or_call_it(title)
     db_find_movie(title) || api_find_movie(title)
   end
